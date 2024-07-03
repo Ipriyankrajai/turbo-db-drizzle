@@ -1,0 +1,20 @@
+{
+    "name": "@repo/db",
+    "main": "src/index.ts",
+    "scripts": {
+        "dev": "tsc --watch",
+        "build": "tsc",
+        "db:generate": "drizzle-kit generate",
+        "db:migrate": "drizzle-kit migrate"
+    },
+    "devDependencies": {
+        "@repo/typescript-config": "workspace:*",
+        "drizzle-kit": "^0.22.8",
+        "typescript": "latest"
+    },
+    "dependencies": {
+        "@neondatabase/serverless": "^0.9.4",
+        "dotenv": "^16.4.5",
+        "drizzle-orm": "^0.31.2"
+    }
+}
